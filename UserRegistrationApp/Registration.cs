@@ -14,6 +14,8 @@ namespace UserRegistrationApp
         public static string regex_email = "^[a-z0-9]+(.[a-z0-9]+)?@[a-z]+[.][a-z]{2,3}(.[a-z]{2})?$";
 
         public static string regex_mobile = "^[1-9][0-9]{1,2}[ ][0-9]{10}$";
+        public static string regex_passwordRule1 = "^[a-zA-Z0-9]{8,}$";
+
         public bool ValidateUserName(string uName)
         {
             return Regex.IsMatch(uName, FirsName);
@@ -30,7 +32,10 @@ namespace UserRegistrationApp
         {
             return Regex.IsMatch(uName, regex_mobile);
         }
-
+        public bool ValidatePasswordRule1(string uName)
+        {
+            return Regex.IsMatch(uName, regex_passwordRule1);
+        }
 
     }
 }
