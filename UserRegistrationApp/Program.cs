@@ -33,3 +33,4 @@ if (num.ValidatePasswordRule1(pwd)==true)
     Console.WriteLine("Password eccepted");
 else
     Console.WriteLine("Invalid");
+
